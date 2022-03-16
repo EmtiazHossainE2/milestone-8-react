@@ -2,15 +2,12 @@
 h2{
     text-align: center;
 }
+p{
+    margin: 0 10%;
+    text-align: justify;
+}
 .countries{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 5px;
-}
-.country{
-    background-color: #05080929;
-    border-radius: 10px;
-    margin: 20px;
-    padding: 20px;
-    border: 0;
 }
