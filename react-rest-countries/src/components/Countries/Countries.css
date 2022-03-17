@@ -11,3 +11,13 @@ p{
     grid-template-columns: repeat(3,1fr);
     grid-gap: 5px;
 }
+button{
+    padding: 10px 15px;
+    margin : 20px;
+    border-radius: 10px;
+    background-color: green;
+    font-size: 18px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
