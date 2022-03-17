@@ -3,6 +3,7 @@ import './App.css'
 import Article from './components/Article/Article';
 import Blog from './components/Blog/Blog';
 import Mobile from './components/Mobile/Mobile';
+import Todos from './components/Todos/Todos';
 
 /* 
     ১. তুমি create react app দিয়ে রিএক্ট এর প্রজেক্ট বানাতে পারো কিনা  
@@ -35,7 +36,8 @@ const App = () => {
             <br />
             <Blog></Blog>
             <br />
-            <Mobile></Mobile>
+            <Mobile></Mobile> <br />
+            <Todos ></Todos>
         </div>
     );
 };
