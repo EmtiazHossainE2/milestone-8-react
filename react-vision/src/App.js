@@ -1,9 +1,6 @@
 import React from 'react';
 import './App.css'
 import Article from './components/Article/Article';
-import Blog from './components/Blog/Blog';
-import Mobile from './components/Mobile/Mobile';
-import Todos from './components/Todos/Todos';
 
 /* 
     ১. তুমি create react app দিয়ে রিএক্ট এর প্রজেক্ট বানাতে পারো কিনা  
@@ -14,30 +11,15 @@ import Todos from './components/Todos/Todos';
 
     ৫. article ট্যাগ এর মধ্যে একটা প্যারাগ্রাফ ট্যাগ যোগ করো। তারপর inline স্টাইল সেখানে যোগ করো। 
 
-    ৬. ব্লগ নামক একটা কম্পোনেন্ট বানাও
-
-    ৭. সেই ব্লগ কম্পোনেন্ট দিয়ে মিনিমাম তিনটা কম্পোনেন্ট বানাবে। 
-
-    ৮. প্রত্যেকটা কম্পোনেন্ট এ heading এবং author নামে দুইটা প্রপার্টি সেন্ড করবে। এবং সেই প্রপার্টিগুলো দেখাবে। 
-    ৯. আরেকটা কম্পোনেন্ট বানাও। যেটার নাম হবে। Mobile সেখানে একটা বাটন থাকবে। বাটন এর নাম হবে "battery down" আর উপরে একটা সংখ্যা থাকবে। ১০০। (এইটা দিয়ে বুঝবে মোবাইল এর ব্যাটারি ১০০% আছে) এখন তুমি যতবার বাটনে ক্লিক করবে। সেই সংখ্যা এর মান ১০ করে কমতে থাকবে। 
-
-    ১০. (স্পেশাল চ্যালেঞ্জ) উপরের ব্যাটারী ডাউন বাটনে চাপ দিলে কমবে। তবে কমতে কমতে যখন ব্যাটারি এর পরিমাণ ০ হয়ে যাবে। তারপরে আর বাটনে চাপ দিলে। ব্যাটারি কমবে না। অর্থাৎ নেগেটিভ হবে না। (দেখো এইটা করতে পারো কিনা)
-
-    ১১. json placeholder এর ওয়েবসাইট এ গিয়ে todo এর ডাটা লোড করে। সেগুলাকে দেখাতে পারো কিনা দেখো। 
 
 
-
+    
  */
 const App = () => {
     return (
         <div >
             <h2 className='text-center my-4'>React Vision Day </h2>
             <Article></Article>
-            <br />
-            <Blog></Blog>
-            <br />
-            <Mobile></Mobile> <br />
-            <Todos ></Todos>
         </div>
     );
 };
