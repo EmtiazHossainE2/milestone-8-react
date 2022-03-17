@@ -16,7 +16,7 @@ const Countries = () => {
                     <button>Explore More</button>
                 </p>
 
-                <h2>Travel  {countries.length} Country All Over The World</h2>
+                <h2>Travel  {countries.length} Country WithOut Money</h2>
                 <div className='countries'>
                     {
                         countries.map(country => <Country
