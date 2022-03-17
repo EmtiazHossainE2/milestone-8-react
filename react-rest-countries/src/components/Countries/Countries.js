@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Country from '../Country/Country';
 import './Countries.css'
 
 const Countries = () => {
@@ -11,31 +12,22 @@ const Countries = () => {
     return (
         <div>
             <div className="container">
-                <div className='info'>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, consequatur soluta corrupti praesentium iusto possimus quaerat doloribus veniam deleniti dicta voluptate et ipsa ducimus ea aut fugit nulla pariatur voluptatem amet perspiciatis. Quos qui rerum iusedita aliquam obcaecati sed ratione corporis non, recusandae nesciunt minus, quasi autem earum! Incidunt blanditiis autem maiores, iure et totam asperiores eaque neque repudiandae consequatur iste quia distinctio perspiciatis voluptate error aut repellat ad corporis dignissimos earum exercitationem. Eum cumque aperiam, repellat, qui sed incidunt vitae sint laudantium nobis soluta ullam officiis ea voluptates voluptatem ipsum culpa? Inventore odit similique harum soluta, quidem illum quisquam quas veritatis. Culpa, esse quasi sit molestiae similique illum? Quo illo exercitationem a quas nisi quis ullam dolores! Aspernatur, deleniti odio voluptatem officia aliquam maiores. Cumque assumenda magni dolore natus repellat placeat laboriosam dicta maiores molestiae esse sapiente quisquam nihil beatae, vel asperiores voluptas ipsam quia modi. Obcaecati facere eligendi voluptates unde recusandae quae dolor sed eius nulla eveniet. Quos itaque harum impedit aliquid, eligendi dolor ducimus rem voluptas ipsa repudiandae? Architecto consectetur maiores doloribus ipsa itaque dignissimos numquam, necessitatibus velit accusamus dolor laudantium voluptates minima sint! Aspernatur commodi iure eius, qui dignissimos ea iusto numquam ut, consectetur repellat, corrupti consequuntur eligendi neque laboriosam molestiae sit! Culpa veniam laborum natus quas rem omnis dolorum harum pariatur ipsam earum? Nihil alias minima doloremque blanditiis vero obcaecati modi expedita, voluptate soluta nisi est mollitia ab.</p>
-
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut distinctio pariatur, voluptas numquam doloribus, unde quos reiciendis illum odit, voluptatibus minus alias quod perspiciatis fuga. Voluptates repudiandae sunt optio fuga dolorum ipsam, esse explicabo minima deserunt reprehenderit possimus quisquam temporibus consequuntur, repellendus, modi ipsum doloribus asperiores culpa assumenda consequatur atque ab voluptate. Dolorum corrupti, repudiandae optio cumque ad quae dolores iste veniam. Dicta molestiae repellendus obcaecati commodi ea, animi excepturi aspernatur praesentium omnis distinctio, nam rerum, inventore dolore in facilis doloremque! Autem consectetur, expedita numquam esse enim delectus molestiae recusandae dolores inventore quae tempora, et sed ad necessitatibus, doloribus eos amet porro quis accusantium cumque. Optio nihil consequuntur ducimus corrupti exercitationem sapiente possimus tempore nostrum excepturi eos, repellendus illo sint voluptatum, fuga necessitatibus ipsum? Modi ipsa velit quas consequatur tempora id quibusdam cupiditate doloribus odio, minus perspiciatis sequi ipsam hic animi minima enim quis in numquam fugit quaerat. Amet, neque, quis expedita optio dolor saepe ipsa eligendi nostrum assumenda quisquam doloribus voluptate ipsum repellendus sequi labore sapiente, non architecto pariatur doloremque molestiae reiciendis omnis commodi. Ullamtetur, exercitationem nihil doloremque beatae perferendis veritatis! Dicta voluptates nam veniam ad quisquam! Voluptatibus quaerat necessitatibus ducimus quis ipsam aperiam tenetur, ullam in facilis asperiores impedit autem debitis labore itaque provident harum distinctio fugiat, deserunt doloribus mollitia saepe dignissimos est. Dolor praesentium impedit voluptatum mollitia. Laudantium beatae impedit quisquam dicta nisi debitis molestias, hic minus ab illum ad quis consequuntur sint nihil recusandae perspiciatis
                     <button>Explore More</button>
-                </div>
-                <h2>Travel  {countries.length} Country All Over The World</h2>
+                </p>
 
+                <h2>Travel  {countries.length} Country WithOut Money</h2>
                 <div className='countries'>
                     {
-                        countries.map(country =>
-                            <Country Name={country.name.common} Population={country.population} Flag={country.flags.png}></Country>)
+                        countries.map(country => <Country
+                            country={country}>
+
+                        </Country>)
                     }
                 </div>
             </div>
         </div>
     );
 };
-const Country = (props) => {
-    return (
-        <div className='country'>
-            <h3>Name : {props.Name}</h3>
-            <p>Total Population : {props.Population}</p>
-            <img src={props.Flag} alt="" />
-        </div>
-    )
-}
 
 export default Countries;
