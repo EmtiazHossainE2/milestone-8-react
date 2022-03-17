@@ -16,3 +16,7 @@
     margin: auto;
     border-radius: 20px;
 }
+button a {
+    text-decoration: none;
+    color: #f7ececdc;
+}
