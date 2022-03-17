@@ -1,0 +1,23 @@
+:root {
+    --btn-color : rgb(235, 20, 20) ;
+    --btn-bg   : rgb(56, 57, 131) ;
+}
+
+
+.blog{
+    background-color: rgb(240, 232, 232);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    
+}
+article p {
+    text-align: justify;
+}
+article .btn-style {    
+    cursor: pointer;
+    background-color: var(--btn-bg);
+    border-color: none ;
+    border-radius: 10px;
+    padding: 6px 10px;
+}
