@@ -3,7 +3,7 @@ import './Article.css'
 
 const ArticleNum = ['One', 'Two', 'Three', 'Four', 'Five']
 const HeadingStyle = {
-    backgroundColor: '#dadada',
+    backgroundColor: '#cfc3c3',
     padding: '10px',
     borderRadius: '10px'
 }
