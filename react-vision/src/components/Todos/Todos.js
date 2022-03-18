@@ -25,7 +25,6 @@ const Todos = () => {
                 {
                     toodos.map(todo => <TodoDisplay
                         todo={todo}>
-
                     </TodoDisplay>)
                 }
             </div>
