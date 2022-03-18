@@ -1,13 +1,10 @@
 import React from 'react';
-import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
     return (
         <div>
-            <h1 className='text-center mt-5 text-primary'>Fakestore </h1>
-
-        </div>
+            <h2>FakeStore </h2>
+        </div >
     );
 };
 
