@@ -4,7 +4,7 @@ import './App.css'
 const App = () => {
     return (
         <div className="App">
-            <h2>Todos Api </h2>
+            <h2>Todos Api Recap </h2>
             <Todo></Todo>
         </div>
     )
