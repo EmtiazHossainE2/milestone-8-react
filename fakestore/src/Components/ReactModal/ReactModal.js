@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Modal } from 'react-bootstrap';
 
-const Modal = () => {
+const ReactModal = (props) => {
     const [show, setShow] = useState(false);
+    const { image, title, price, description } = props.product
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -14,15 +15,19 @@ const Modal = () => {
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Modal heading</Modal.Title>
+
                 </Modal.Header>
-                <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                <Modal.Body>
+                    <img className='w-50 m-auto d-flex' src={image} alt="" /> <br />
+                    <Modal.Title>{title}</Modal.Title>
+                    {description}
+                </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
-                        Close
+                        Price : ${price}
                     </Button>
                     <Button variant="primary" onClick={handleClose}>
-                        Save Changes
+                        Close
                     </Button>
                 </Modal.Footer>
             </Modal>
@@ -30,4 +35,4 @@ const Modal = () => {
     );
 };
 
-export default Modal;
+export default ReactModal;
