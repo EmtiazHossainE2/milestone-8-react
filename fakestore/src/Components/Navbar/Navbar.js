@@ -11,11 +11,11 @@ const Navbar = () => {
                 <div className="col-md-9">
                     <nav>
                         <ul className=' text-primary  text-capitalize d-flex list-unstyled justify-content-end '>
-                            <li>home</li>
-                            <li>about</li>
-                            <li>contact</li>
-                            <li>cart</li>
-                            <li>user</li>
+                            <li><a href="/home">home</a></li>
+                            <li><a href="/about">about</a></li>
+                            <li><a href="/contact">contact</a></li>
+                            <li><a href="/cart">cart</a></li>
+                            <li><a href="/user">user</a></li>
                         </ul>
                     </nav>
                 </div>

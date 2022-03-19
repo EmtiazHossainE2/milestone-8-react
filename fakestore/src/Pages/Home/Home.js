@@ -1,4 +1,5 @@
 import React from 'react';
+import AllProducts from '../../Components/AllProducts/AllProducts';
 import Navbar from '../../Components/Navbar/Navbar';
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
         <div>
             <div className="container">
                 <Navbar></Navbar>
+                <AllProducts></AllProducts>
             </div>
 
         </div>
