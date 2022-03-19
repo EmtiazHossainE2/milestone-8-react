@@ -13,6 +13,7 @@ const Navbar = () => {
                         <ul className=' text-primary  text-capitalize d-flex list-unstyled justify-content-end '>
                             <li>home</li>
                             <li>about</li>
+                            <li>contact</li>
                             <li>cart</li>
                             <li>user</li>
                         </ul>
