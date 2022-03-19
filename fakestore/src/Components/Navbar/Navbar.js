@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.css'
 
-const Navbar = () => {
+const Navbar = (props) => {
     return (
         <div>
             <div className="row mt-3">
@@ -14,7 +14,7 @@ const Navbar = () => {
                             <li><a href="/home">home</a></li>
                             <li><a href="/about">about</a></li>
                             <li><a href="/contact">contact</a></li>
-                            <li><a href="/cart">cart</a></li>
+                            <li><a href="/cart">cart <sup>{props.count}</sup></a></li>
                             <li><a href="/user">user</a></li>
                         </ul>
                     </nav>
