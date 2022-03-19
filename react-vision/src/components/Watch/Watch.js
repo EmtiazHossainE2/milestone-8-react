@@ -2,7 +2,7 @@ import React from 'react';
 
 const Watch = () => {
     const tick = () => {
-        new Date().toLocaleTimeString()
+        // new Date().toLocaleTimeString()
     }
     setInterval(tick, 1000);
     return (
