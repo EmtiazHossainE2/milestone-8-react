@@ -1,0 +1,8 @@
+.single-laptop{
+    border: 2px solid purple;
+    padding: 10px;
+    margin: 10px;
+    background-color: green;
+    color: #fff;
+    border-radius: 10px;
+}
