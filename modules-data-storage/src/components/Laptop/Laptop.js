@@ -1,11 +1,13 @@
 import React from 'react';
+import { addToDb } from '../utilities/fakedb';
 import './Laptop.css'
 
 const Laptop = (props) => {
     const { name, price, picture, company, id } = props.laptop
-    const addToCart = (id, name) => {
-        console.log('Added', id, name);
+    const addToCart = (id) => {
         //Create Event handler with parameters
+        // console.log('Added', id, name);
+        addToDb(id)
     }
     return (
         <div className='single-laptop'>
@@ -14,7 +16,7 @@ const Laptop = (props) => {
             <h5>CPU : {picture}</h5>
             <strong>GPU : {company}</strong>
             <p><small>id : {id}</small></p>
-            <button onClick={() => addToCart(id, name)}>Add Cart</button>
+            <button onClick={() => addToCart(id)}>Add Cart</button>
         </div>
     );
 };
