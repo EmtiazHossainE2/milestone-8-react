@@ -1,6 +1,11 @@
-function tick() {
-    return new Date().toLocaleTimeString()
-}
+const myFunc = () => {
+    function tick() {
+        let timet = new Date().toLocaleTimeString()
+        return timet
+    }
 
-setInterval(tick, 1000);
-export default tick;
+    let setTime = setInterval(tick, 1000);
+    return setTime
+}
+// console.log(setTime);
+export default myFunc;
