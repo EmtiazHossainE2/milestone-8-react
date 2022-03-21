@@ -6,7 +6,6 @@ const Laptop = (props) => {
     const { name, price, picture, company, id } = props.laptop
     const addToCart = (id) => {
         //Create Event handler with parameters
-        // console.log('Added', id, name);
         addToDb(id)
     }
     const removeFromCart = id => {
