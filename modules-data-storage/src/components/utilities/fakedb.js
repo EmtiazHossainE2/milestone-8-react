@@ -1,4 +1,33 @@
+
+
 const addToDb = id => {
+    let shoppingCart = {};
+    //get the shopping cart 
+    const storedCart = localStorage.getItem('shopping-cart')
+    if (storedCart) {
+        shoppingCart = JSON.parse(storedCart)
+    }
+    // add quantity 
+    const quantity = shoppingCart[id]
+    if (quantity) {
+        const newQuantity = quantity + 1;
+        shoppingCart[id] = newQuantity
+    }
+    else {
+        shoppingCart[id] = 1
+    }
+    localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart))
+}
+export { addToDb }
+
+
+
+
+
+
+
+
+/* const addToDb = id => {
 
     const quantity = localStorage.getItem(id)
     if (quantity) {
@@ -10,6 +39,5 @@ const addToDb = id => {
         // console.log('new added ');
         localStorage.setItem(id, 1)
     }
-
 }
-export { addToDb }
+export { addToDb } */
