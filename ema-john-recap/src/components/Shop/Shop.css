@@ -1,10 +1,41 @@
 .shop-container{
     display: grid;
     grid-template-columns: 4fr 1fr ;
+    position: relative;
 }
 .products-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 35px;
-    margin: 60px 30px 200px 30px;
+    gap: 30px;
+    margin: 60px 20px 200px 30px;
+}
+.cart-container{
+    background-color: #FFE0B2;
+    padding: 0 20px;
+    height: 60vh;
+    position: fixed;
+    right: 0px;
+    border-radius: 4px;
+}
+.clear-cart{
+    width: 100%;
+    background-color: #FF3030;
+    margin-bottom: 10px;
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.review-order{
+    width: 100%;
+    background-color: #FF9900;
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.icon{
+    margin-left: 6px;
+    font-size: 17px;
 }

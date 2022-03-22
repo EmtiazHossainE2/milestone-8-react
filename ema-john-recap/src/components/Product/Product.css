@@ -3,6 +3,7 @@
     height: 510px;
     border: 1px solid #95A0A7;
     border-radius: 8px;
+    position: relative;
 }
 .product-container img{
     width: 286px;
@@ -11,5 +12,36 @@
     border-radius: 8px;
 }
 .product-info{
+    margin-left: 10px;
+}
+.product-name{
+    font-size: 21px;
+    margin: 11px 0 0 0;
+}
+.product-price{
+    font-size: 18px;
+    margin: 7px 0 0 0 ;
+}
+.seller{
+    margin: 25px 0 0 0 ;
+}
+.ratings{
+    margin: 5px 0 0 0 ;
+}
+.cart-btn{
+    width: 100%;
+    border: 0;
+    position: absolute;
+    bottom: 0;
+    background-color: #FFE0B2;
+    font-size: 17px;
+    cursor: pointer;
+}
+.cart-btn:hover {
+    background-color: rgb(250, 169, 18);
+    color: #fff;
+}
+.icon{
+    font-size: 17px;
     margin-left: 10px;
 }
