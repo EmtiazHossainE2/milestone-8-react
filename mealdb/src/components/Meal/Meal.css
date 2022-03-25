@@ -1,0 +1,10 @@
+.meal img{
+    width: 200px;
+}
+.meal{
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 20px;
+    text-align: center;
+}
